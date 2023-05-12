@@ -1,7 +1,7 @@
-import React, {useEffect} from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
-import Cell from "./Cell";
+import {Cell} from "../cell";
 import BackArrow from '../../assets/arrow-back.svg'
 import { resetStatus, resetScore, reset } from "../../store/slice/gameSlice";
 import { useNavigate } from "react-router-dom";
@@ -99,7 +99,7 @@ img {
   }
 `
 
-const Board = () => {
+const BoardComponent = () => {
   const { gameStatus, winner, isFinished } = useSelector((state) => state.game);
   const dispatch = useDispatch();
   const navigator = useNavigate();
@@ -129,7 +129,7 @@ const Board = () => {
         </>
       </Square>
       <ToolBar>
-        <Button onClick={backHandle}><img src={BackArrow}/></Button>
+        <Button onClick={backHandle}><img src={BackArrow} alt="back-arrow"/></Button>
         {isFinished && <><Button onClick={nextRoundHandle}>Next Round</Button>
         <Button onClick={resetScoreHandle}>Reset Score</Button></>}
       </ToolBar>
@@ -137,4 +137,4 @@ const Board = () => {
   );
 };
 
-export default Board;
+export default BoardComponent;

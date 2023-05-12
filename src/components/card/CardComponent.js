@@ -47,7 +47,7 @@ const Face = styled.img`
   height: 50%;
 `;
 
-const Card = ({ gameMode }) => {
+const CardComponent = ({ gameMode }) => {
   const navigator = useNavigate();
   const dispatch = useDispatch();
   const handleClick = () => {
@@ -64,4 +64,4 @@ const Card = ({ gameMode }) => {
   );
 };
 
-export default Card;
+export default CardComponent;

@@ -1,5 +1,5 @@
 import React from "react";
-import Board from "./Board";
+import Board from "../../components/board/Board";
 import styled from "styled-components";
 import Blue from "../../assets/player.svg";
 import Red from "../../assets/player-alt.svg";
@@ -21,7 +21,7 @@ const Score = styled.span`
   font-size: 4.2rem;
 `;
 
-export default () => {
+const GameContainer =() => {
   const { first, second } = useSelector((state) => state.game.score);
   return (
     <>
@@ -37,3 +37,5 @@ export default () => {
     </>
   );
 };
+
+export default GameContainer;

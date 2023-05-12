@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Routes, Route } from "react-router-dom";
 
-import Menu from "../components/menu";
-import Game from "../components/game";
+import { Game } from "../container/game";
+import { Menu } from "../container/menu";
 
 const Container = styled.div`
   display: flex;

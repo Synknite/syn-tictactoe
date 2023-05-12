@@ -11,7 +11,7 @@ const Footer = () => {
         alignItems: "center",
       }}
     >
-      <img src={FooterImage} style={{ width: "3rem" }} />
+      <img src={FooterImage} style={{ width: "3rem" }} alt="footer"/>
     </div>
   );
 };

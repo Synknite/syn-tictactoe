@@ -20,7 +20,7 @@ const Image = styled.img`
   height: 70px;
 `;
 
-const Cell = ({ value, pos }) => {
+const CellComponent = ({ value, pos }) => {
   const dispatch = useDispatch();
   const handleClick = () => {
     if (value) return;
@@ -39,4 +39,4 @@ const Cell = ({ value, pos }) => {
   );
 };
 
-export default Cell;
+export default CellComponent;

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import Card from "./Card";
+import { Card } from "../../components/card";
 import { useNavigate } from "react-router-dom";
 
 const InnerContainer = styled.div`
@@ -13,11 +13,11 @@ const InnerContainer = styled.div`
   height: 100%;
 `;
 
-const Menu = () => {
+const MenuContainer = () => {
   const navigator = useNavigate();
   useEffect(() => {
     navigator("/menu");
-  },[])
+  },[navigator])
   return (
     <InnerContainer>
       <Card gameMode={1} />
@@ -26,4 +26,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default MenuContainer;
