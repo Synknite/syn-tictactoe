@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}

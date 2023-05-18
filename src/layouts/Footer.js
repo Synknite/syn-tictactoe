@@ -3,14 +3,7 @@ import FooterImage from "../assets/github.svg";
 
 const Footer = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        height: "100px",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <div className="footer">
       <img src={FooterImage} style={{ width: "3rem" }} alt="footer"/>
     </div>
   );
